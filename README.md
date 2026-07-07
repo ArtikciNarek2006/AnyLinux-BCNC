@@ -1,2 +1,21 @@
 # AnyLinux-BCNC
-script kit to install bCNC in any linux environment without breaking system packages.
+Scripts to install/update bCNC in any linux environment without breaking system packages.
+
+### Installation
+```bash
+mkdir -p ~/Applications &&
+git clone https://github.com/ArtikciNarek2006/AnyLinux-BCNC.git ~/Applications/bCNC &&
+echo 'export PATH="$PATH:$HOME/Applications/bCNC/"' >> ~/.bashrc  &&
+export PATH="$PATH:$HOME/Applications/bCNC/"  &&
+bCNC-update.sh
+```
+
+### Update/Fix missing shortcut
+```bash
+bCNC-update.sh
+```
+
+### Starting via terminal
+```bash
+bCNC-start.sh
+```
