@@ -4,6 +4,7 @@ Scripts to install/update bCNC in any linux environment without breaking system 
 ### Installation
 ```bash
 mkdir -p ~/Applications &&
+rm -rf ~/Applications/bCNC &&
 git clone https://github.com/ArtikciNarek2006/AnyLinux-BCNC.git ~/Applications/bCNC &&
 echo '# bCNC-update.sh: Add bCNC maintenance scripts to PATH.' >> ~/.bashrc &&
 echo 'export PATH="$PATH:$HOME/Applications/bCNC/"' >> ~/.bashrc  &&
